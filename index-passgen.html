@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles-passgen.css" />
+  </head>
+  <body>
+    <div class="container">
+        <h3>Password generator:</h3>
+        <div class="password-body">
+            <div class="text-area">
+                <input type="text" id="strongPasswordValue" disabled />
+                <img src="https://cdn0.iconfinder.com/data/icons/harmonicons-02/64/clipboard-1024.png" id="CopySuccess"/>
+            </div>
+            <div class="password-length">
+                <input 
+                type="range" 
+                id="rangeInput" 
+                min="5" 
+                max="" 
+                value="8" 
+                oninput="rangeValue.value=this.value"
+                />
+                <input 
+                type="number" 
+                id="rangeValue" 
+                min="5" max="" 
+                value="8"
+                oninput="rangeInput.value=this.value"
+                />
+             </div>
+             <div class="checkBox-list">
+                <label class="options" for="Uppercase"
+                ><input id="Uppercase" type="checkbox" value="Uppercase" checked />
+                Include Uppercase Letters (A-Z)</label
+                >
+                <label class="options" for="Lowercase"
+                ><input id="Lowercase" type="checkbox" value="Lowercase" /> Include
+                Lowercase Letters (a-z)</label
+                >
+                <label class="options" for="Numbers"
+                ><input id="Numbers" type="checkbox" value="Numbers" /> Include
+                Numbers (0-9)</label
+                >
+                <label class="options" for="Symbols"
+                ><input id="Symbols" type="checkbox" value="Symbols" /> Include
+                Symbols (@-$)</label
+                >
+                <label class="options" for="Duplicate"
+                ><input id="Duplicate" type="checkbox" value="Duplicate" /> Exclude
+                Duplicate Characters</label
+                >
+            </div>
+            <button class="generatePassword">Generate Password</button>
+            </div>
+            <script type="text/javascript" src="script-passgen.js"></script>
+         </body>
+         </html>
