@@ -14,17 +14,6 @@ const Characters = {
     Symbols: "~!@#$%^&*()_+{}[].,:;|",
   };
 
-  function CopyStrongPassword() {
-    if (passwordInput.value !== "") {
-      copySuccess.setAttribute("src", "https://www.pngitem.com/pimgs/b/11-110747_approval-icon-png.png");
-      navigator.clipboard.writeText(passwordInput.value);
-  
-      setTimeout(function () {
-        copySuccess.setAttribute("src", "https://th.bing.com/th/id/R.864d42d81c257368512c8591c680b3f2?rik=A%2faO%2fTxbbNjgCg&pid=ImgRaw&r=0");
-      }, 2000);
-    }
-  }
-
   generatePassword.addEventListener("click", generateStrongPassword);
 function generateStrongPassword() {
   let randomPassword = "",

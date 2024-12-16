@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #78c1f3;
+  background: #f2d9ae;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -18,7 +18,7 @@ body {
   background: #ffffff;
   padding: 25px;
   width: 450px;
-  border-radius: 10px;
+  border-radius: 0;
 }
 
 h3 {
@@ -33,7 +33,7 @@ h3 {
     border-radius: 30px;
     padding-left: 20px;
     margin-bottom: 25px;
-    background:#78c1f3
+    background:#edd969
   }
   
   .text-area input {
@@ -41,7 +41,7 @@ h3 {
     border: none;
     outline: none;
     background: transparent;
-    color: #ffffff;
+    color: #000000;
     padding: 15px 0;
     font-size: 18px;
     text-align: center;
@@ -95,7 +95,7 @@ h3 {
   .generatePassword {
     width: 100%;
     font-size: 16px;
-    background: #78c1f3;
+    background: #edd969;
     color: #000000;
     border: none;
     outline: none;
